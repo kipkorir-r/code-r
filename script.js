@@ -1,9 +1,13 @@
 const p = document.getElementById("para");
+const btn = document.getElementById("btn");
+const Ttl = document.getElementById("ttl");
+const Bdy = document.getElementById("bdy");
+const Fle=document.getElementById("fle");
 
-async function getdata() {
-    const response = await fetch("https://randomuser.me/api/");
-    const data = await response.jason();
-    const user = data.results[0];
+async function getdata(e) {
+    e.preventdefault();
 
-    p.innerText = `${user.name.title}  ${user.name.first} ${user.name.last}`; 
-}
+   const response = await fetch("")
+};
+
+btn.addEventListener("click", getdata);
